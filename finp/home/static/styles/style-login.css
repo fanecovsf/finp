@@ -1,0 +1,68 @@
+/* Reset some default styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Style for the background */
+body {
+  background-color: #525467;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Style for the login form */
+.login {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px; /* Increased padding */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Style for input fields */
+.login input[type="text"],
+.login input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid rgba(191, 255, 61, 0.5);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  outline: none;
+  box-sizing: border-box; /* Ensure padding and border don't affect element width */
+}
+
+/* Hover effect for input fields */
+.login input[type="text"]:hover,
+.login input[type="password"]:hover {
+  background-color: rgba(191, 255, 61, 0.3);
+}
+
+/* Style for the login button */
+.login button {
+  background-color: #525467;
+  color: white;
+  border: none;
+  padding: 14px 28px; /* Increased padding */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the login button */
+.login button:hover {
+  background-color: #3c3f47; /* A darker shade of the neon color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+  .login {
+      width: 80%;
+  }
+}
