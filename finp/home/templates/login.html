@@ -8,11 +8,14 @@
     <title>Login Page</title>
 </head>
 <body>
-    <form class="login" method="post">
-        {% csrf_token %}
-        <input type="text" placeholder="Username" name="username">
-        <input type="password" placeholder="Password" name="password">
-        <button type="submit">Login</button>
-    </form>
+    <div class="container">
+        <img src="{% static 'images/logo-small.png' %}" alt="logo" class="logo">
+        <form class="login" method="post">
+            {% csrf_token %}
+            <input type="text" placeholder="Username" name="username">
+            <input type="password" placeholder="Password" name="password">
+            <button type="submit">Login</button>
+        </form>
+    </div>
 </body>
 </html>
